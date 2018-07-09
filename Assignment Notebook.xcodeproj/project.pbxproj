@@ -13,6 +13,7 @@
 		49E661E120F3C2E300EA9105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E661DF20F3C2E300EA9105 /* Main.storyboard */; };
 		49E661E320F3C2E400EA9105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E661E220F3C2E400EA9105 /* Assets.xcassets */; };
 		49E661E620F3C2E400EA9105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E661E420F3C2E400EA9105 /* LaunchScreen.storyboard */; };
+		49E661EE20F3C4A700EA9105 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E661ED20F3C4A700EA9105 /* Assignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		49E661E220F3C2E400EA9105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E661E520F3C2E400EA9105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49E661E720F3C2E400EA9105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E661ED20F3C4A700EA9105 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				49E661D920F3C2E300EA9105 /* AppDelegate.swift */,
 				49E661DB20F3C2E300EA9105 /* MasterViewController.swift */,
 				49E661DD20F3C2E300EA9105 /* DetailViewController.swift */,
+				49E661ED20F3C4A700EA9105 /* Assignment.swift */,
 				49E661DF20F3C2E300EA9105 /* Main.storyboard */,
 				49E661E220F3C2E400EA9105 /* Assets.xcassets */,
 				49E661E420F3C2E400EA9105 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E661EE20F3C4A700EA9105 /* Assignment.swift in Sources */,
 				49E661DE20F3C2E300EA9105 /* DetailViewController.swift in Sources */,
 				49E661DC20F3C2E300EA9105 /* MasterViewController.swift in Sources */,
 				49E661DA20F3C2E300EA9105 /* AppDelegate.swift in Sources */,
