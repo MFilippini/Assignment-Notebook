@@ -64,27 +64,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m7t-6j-0WJ">
-                                <rect key="frame" x="67" y="317" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="4Ly-ro-PG6"/>
-                                    <constraint firstAttribute="width" constant="240" id="BEz-5w-mxb"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="clu-PX-gkH">
+                                <rect key="frame" x="69" y="356" width="236" height="30"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7x3-uA-qex" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="1w2-tr-x35"/>
+                            <constraint firstItem="clu-PX-gkH" firstAttribute="top" secondItem="Rda-o0-Md1" secondAttribute="bottom" constant="76" id="4p7-2l-hOY"/>
                             <constraint firstItem="Oyg-LP-OPn" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="60" id="6EU-gz-rst"/>
-                            <constraint firstItem="m7t-6j-0WJ" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="Jk4-IT-2sQ"/>
-                            <constraint firstItem="m7t-6j-0WJ" firstAttribute="top" secondItem="Rda-o0-Md1" secondAttribute="bottom" constant="37" id="Pu1-n7-U27"/>
+                            <constraint firstItem="clu-PX-gkH" firstAttribute="centerX" secondItem="Rda-o0-Md1" secondAttribute="centerX" id="Erz-RR-KzM"/>
                             <constraint firstItem="Rda-o0-Md1" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="RuZ-70-vtd"/>
                             <constraint firstItem="Rda-o0-Md1" firstAttribute="top" secondItem="7x3-uA-qex" secondAttribute="bottom" constant="31" id="SZz-HG-12y"/>
                             <constraint firstItem="7x3-uA-qex" firstAttribute="top" secondItem="Oyg-LP-OPn" secondAttribute="bottom" constant="35" id="anc-1O-7Uc"/>
+                            <constraint firstItem="clu-PX-gkH" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="69" id="jTq-2c-azD"/>
                             <constraint firstItem="Oyg-LP-OPn" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="v4k-DM-p9e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
@@ -93,9 +89,8 @@
                     <navigationItem key="navigationItem" title="Assignment Details" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="assignmentClass" destination="7x3-uA-qex" id="O5P-bg-1hM"/>
-                        <outlet property="assignmentDescription" destination="m7t-6j-0WJ" id="JhJ-u3-p6Z"/>
+                        <outlet property="assignmentDescription" destination="clu-PX-gkH" id="tAN-X8-zRn"/>
                         <outlet property="assignmentName" destination="Oyg-LP-OPn" id="ys2-bM-dO9"/>
-                        <outlet property="description" destination="m7t-6j-0WJ" id="IeF-bV-3Wh"/>
                         <outlet property="dueDate" destination="Rda-o0-Md1" id="uYP-zb-Jv1"/>
                     </connections>
                 </viewController>

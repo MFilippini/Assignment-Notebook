@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var assignmentName: UITextField!
     @IBOutlet weak var assignmentClass: UITextField!
     @IBOutlet weak var dueDate: UITextField!
-    @IBOutlet weak var assignmentDescription: UITextView!
+    @IBOutlet weak var assignmentDescription: UITextField!
     
     var detailItem: Assignment? {
         didSet {
