@@ -16,11 +16,23 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var dueDate: UITextField!
     @IBOutlet weak var assignmentDescription: UITextView!
     
+    var detailItem: Assignment? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
+    
+    
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+        if let assignment = self.detailItem {
+            if assignmentName != nil {
+                assignmentName.text = assignment.name
+                assignmentClass.text = assignment.forClass
+                dueDate.text = assignment.dueDate
+                assignmentDescription.text = assignment.description
             }
         }
     }
@@ -31,17 +43,21 @@ class DetailViewController: UIViewController {
         configureView()
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        if let assignment = self.detailItem {
+            assignment.name = assignmentName.text!
+            assignment.forClass = assignmentClass.text!
+            assignment.dueDate = dueDate.text!
+            assignment.description = assignmentDescription.text!
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
-        didSet {
-            // Update the view.
-            configureView()
-        }
-    }
+    
 
 
 }
